@@ -1,0 +1,41 @@
+# PlayAzerothSurvivors.com — Azeroth Survivors guide & play portal
+
+> An independent, fan-made guide and play portal for Azeroth Survivors, the free WoW-inspired survivors roguelike by developer Aethus (official site: wow.aethus.pl). Not affiliated with Blizzard Entertainment. World of Warcraft and Azeroth are trademarks of Blizzard Entertainment, Inc.
+
+## Quick answers
+
+**What is Azeroth Survivors?**
+A free, fan-made "survivors"-style roguelike set in the look and spells of World of Warcraft Classic (client 1.12). You pick one of 9 classes, move with WASD while your spells cast themselves, draft one of three loot-colored upgrade cards on every level-up, and beat a boss schedule that ends with a zone's final boss. It is made by a developer known as Aethus and is not an official Blizzard game.
+
+**Is it free?**
+Yes. The browser version at the developer's official site wow.aethus.pl asks for no payment and no account (checked 2026-11-10, game version v0.143.0). There is also an official Windows client linked from the same official site. This guide site links official sources only and never hosts game files.
+
+**How many classes are there?**
+Nine: Hunter, Warlock, Mage, Paladin, Warrior, Shaman, Priest, Druid, Rogue. On the most recent community ranking (game v0.142.0) Hunter, Warlock and Mage sit in S tier; Paladin and Warrior are the easiest picks for new players.
+
+## Key facts (checked 2026-11-10, game v0.143.0)
+
+- Developer: Aethus (individual developer; official site wow.aethus.pl, official Discord invite "azerothsurvivors" with 113,690 members per the public Discord API, 2026-11-10)
+- Setting: World of Warcraft Classic 1.12 look and spells; many players call it "WoW Survivors" (also: Warcraft Survivors, Survivors of Azeroth, singular "Azeroth Survivor")
+- Current version: v0.143.0 (2026-11-10); the game updated rapidly through October 2026 (v0.114 to v0.142 within about a month)
+- Content: 9 classes, 8 races, 13 zones from Elwynn Forest to Naxxramas, each zone ending in a scheduled final boss (Elwynn Forest's Edwin VanCleef arrives at 16:00); endless mode after the final boss
+- Co-op: up to 5 players in one run in the browser version, since game v0.114.0
+- Platforms: browser (needs WebGPU — current Chrome, Edge or Safari) and an official Windows client; no mobile app and no Steam page at the time of writing
+- Open-source engine port: OutThisLife/azeroth-survivors-re on GitHub, a from-scratch WoW 1.12.1 client engine in Rust + Bevy, Apache-2.0 licensed, compiled to WebAssembly
+
+## Pages
+
+- [Home — play free online, class builds & guides](https://playazerothsurvivors.com/): play portal with direct answers, class overview, tier preview, download section, how a run works and a 20-question FAQ.
+- [Azeroth Survivor](https://playazerothsurvivors.com/azeroth-survivor/): what the game is, who made it, whether it is free, and how it relates to World of Warcraft.
+- [Azeroth Survivors Game](https://playazerothsurvivors.com/azeroth-survivors-game/): game overview, version history (v0.87 to v0.143.0), and where to play (browser / Windows / mobile).
+- [How to Play](https://playazerothsurvivors.com/how-to-play/): beginner walkthrough — quick start, choosing a first class, controls, and where saves live.
+- [Builds](https://playazerothsurvivors.com/builds/): build hub for all 9 classes with S-tier picks and role notes for game v0.143.0.
+- [Tier List](https://playazerothsurvivors.com/tier-list/): all 9 classes ranked S/A/B with reasons, re-checked each patch.
+- [Best Class](https://playazerothsurvivors.com/best-class/): best class picks by playstyle (safest, fastest, most beginner-friendly).
+- [Download](https://playazerothsurvivors.com/download/): official download and play channels only — browser play and the official Windows client; safety notes.
+- [Troubleshooting](https://playazerothsurvivors.com/troubleshooting/): fixes for not loading, black screen, "Too many people are playing", and "WebGPU found no usable graphics card".
+- [About](https://playazerothsurvivors.com/about/): who runs this site and how facts are sourced.
+
+## How this site states facts
+
+Version-dependent statements carry the game version and check date (currently v0.143.0, 2026-11-10). Rankings are community opinions compiled from the dedicated guide sites and player videos of the period, not official game text.

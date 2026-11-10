@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azeroth Survivors Not Loading? Black Screen, WebGPU & Server Busy Fixes</title>
+<meta name="description" content="Fixes for Azeroth Survivors not loading: black screen, the 'Too many people are playing' server-busy notice, and 'WebGPU found no usable graphics card' — direct answers and step lists.">
+<link rel="canonical" href="https://playazerothsurvivors.com/troubleshooting/">
+<meta name="theme-color" content="#101214">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="sitemap" href="/sitemap.xml">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Context">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PlayAzerothSurvivors">
+<meta property="og:title" content="Azeroth Survivors Not Loading? Black Screen, WebGPU & Server Busy Fixes">
+<meta property="og:description" content="Fixes for Azeroth Survivors not loading: black screen, the 'Too many people are playing' server-busy notice, and 'WebGPU found no usable graphics card' — direct answers and step lists.">
+<meta property="og:url" content="https://playazerothsurvivors.com/troubleshooting/">
+<meta property="og:locale" content="en_US">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "url": "https://playazerothsurvivors.com/", "name": "PlayAzerothSurvivors", "description": "Independent, fan-made guide and play portal for Azeroth Survivors. Not affiliated with Blizzard Entertainment or the developer Aethus.", "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is Azeroth Survivors not loading?", "acceptedAnswer": {"@type": "Answer", "text": "The two usual causes: your browser lacks WebGPU (the game draws its world with it), or the official server is busy. Use a current Chrome, Edge or Safari, keep hardware acceleration on, and if the site says the server is full, wait a bit and reload."}}, {"@type": "Question", "name": "How do I fix a black screen in Azeroth Survivors?", "acceptedAnswer": {"@type": "Answer", "text": "A black canvas almost always means WebGPU is missing or failing: update your browser, enable hardware acceleration, and on Linux Chrome enable chrome://flags/#enable-unsafe-webgpu. If it still fails, play the official Windows client."}}, {"@type": "Question", "name": "What does Too many people are playing mean?", "acceptedAnswer": {"@type": "Answer", "text": "The official game server is at capacity. The notice clears on its own — reload the page and press Play again a little later, or switch to the official Windows client while the browser build is crowded."}}, {"@type": "Question", "name": "What does WebGPU found no usable graphics card mean?", "acceptedAnswer": {"@type": "Answer", "text": "Your browser could not create a WebGPU device from your GPU. Update your graphics drivers and your browser, enable hardware acceleration, and if your GPU is too old for WebGPU, use the Windows client."}}, {"@type": "Question", "name": "The game is laggy — what can I do?", "acceptedAnswer": {"@type": "Answer", "text": "Close heavy tabs, keep hardware acceleration on, try a WebGPU browser other than the one you're on, and during peak hours consider the Windows client, which skips the crowded browser path."}}, {"@type": "Question", "name": "Does it work on phones?", "acceptedAnswer": {"@type": "Answer", "text": "There is no official mobile app; phone browsers support WebGPU inconsistently. If it won't load on your phone, that's usually why — a desktop browser is the most reliable way to play."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="site">
+<a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#d7f000" stroke-width="5"/><path d="M32 12 L50 50 H42 L32 26 L22 50 H14 Z" fill="#b8c400"/></svg>Azeroth Survivors</a>
+<nav class="main" aria-label="Main"><a href="/#play">Play</a><a href="/builds/#classes">Classes</a><a href="/builds/">Builds</a><a href="/tier-list/">Tier List</a><a href="/download/">Download</a><a href="/troubleshooting/">Troubleshoot</a></nav>
+<div class="lang" aria-label="Language"><b>EN</b><span title="Deutsch — in preparation">DE</span><span title="Español — in preparation">ES</span></div>
+</header>
+<main>
+<section class="hero">
+  <span class="kicker">Fixes · checked 2026-11-10 · game v0.143.0</span>
+  <h1>Azeroth Survivors Troubleshooting</h1>
+  <p class="sub">Not loading, black screen, a busy server, or a WebGPU error — the four fixes, in plain words.</p>
+  <div class="btnrow"><a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Open the official game ↗</a>
+  <a class="btn btn-ghost" href="/download/">Windows client</a></div>
+</section>
+
+<section id="not-loading">
+  <h2>Azeroth Survivors is not loading</h2>
+  <p class="lede"><strong>Direct answer:</strong> the game needs a WebGPU-capable browser and a reachable official server — update Chrome, Edge or Safari to the current version, keep hardware acceleration on, and if the server is busy, wait and reload.</p>
+  <ul class="checks">
+    <li>Use a current <strong>Chrome, Edge or Safari</strong> — the game draws with WebGPU, which older browsers lack.</li>
+    <li>Check <strong>hardware acceleration</strong> is on in the browser's system settings.</li>
+    <li>Click into the game window so it has <strong>browser focus</strong>.</li>
+    <li>Serving &ldquo;Too many people&rdquo;? That's capacity, not your setup — <a href="#server-busy">see below</a>.</li>
+    <li>Still nothing? <a href="/download/">The official Windows client</a> bypasses browser issues entirely.</li>
+  </ul>
+</section>
+<section id="black-screen">
+  <h2>Black screen (or black canvas)</h2>
+  <p class="lede"><strong>Direct answer:</strong> a black screen usually means WebGPU is missing or failing on your machine — update your browser, turn hardware acceleration on, and on Linux Chrome enable the WebGPU flag; the Windows client is the fallback.</p>
+  <ul class="checks">
+    <li>Distinguish <strong>black screen vs normal loading</strong> — a fresh run loads waves for a moment first; give it a few seconds.</li>
+    <li>Update your browser to the latest version (WebGPU arrived relatively recently).</li>
+    <li>Enable <strong>hardware acceleration</strong>; on Linux Chrome enable <code>chrome://flags/#enable-unsafe-webgpu</code>.</li>
+    <li>Update your <strong>GPU drivers</strong> if other WebGPU demos also fail.</li>
+    <li>Still black? <a href="/download/">Switch to the official Windows client</a>.</li>
+  </ul>
+</section>
+<section id="server-busy">
+  <h2>&ldquo;Too many people are playing&rdquo; (server busy)</h2>
+  <p class="lede"><strong>Direct answer:</strong> the official server is at capacity — the notice clears on its own, so reload and press Play again a little later, or use the official Windows client meanwhile.</p>
+  <ul class="checks">
+    <li><strong>Reload and retry:</strong> the busy notice clears on its own once load drops.</li>
+    <li><strong>Off-peak helps:</strong> the game's Discord community (113,690 members as of 2026-11-10) peaks hard in US evenings.</li>
+    <li><strong>Windows client:</strong> community guides recommend it exactly for crowded-server times — <a href="/download/">get it from the official site</a>.</li>
+    <li>Check the <a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">official Discord ↗</a> for live status and patch news.</li>
+  </ul>
+</section>
+<section id="webgpu-error">
+  <h2>&ldquo;WebGPU found no usable graphics card&rdquo;</h2>
+  <p class="lede"><strong>Direct answer:</strong> your browser couldn't create a WebGPU device from your GPU — update your graphics drivers and browser, enable hardware acceleration, and if the GPU is too old for WebGPU, play the Windows client instead.</p>
+  <ul class="checks">
+    <li>Update your <strong>GPU drivers</strong> (NVIDIA / AMD / Intel) to the current release.</li>
+    <li>Update the browser itself; then re-open and retry.</li>
+    <li>Enable <strong>hardware acceleration</strong> in browser settings.</li>
+    <li>On Linux Chrome: <code>chrome://flags/#enable-unsafe-webgpu</code>.</li>
+    <li>Older GPUs without the features WebGPU needs can't be fixed — <a href="/download/">the official Windows client</a> runs without WebGPU.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="kicker">More quick checks</span>
+  <h2>Still stuck? Thirty-second checks</h2>
+  <ul class="checks">
+    <li><strong>Another browser:</strong> a second WebGPU browser isolates profile/extension problems.</li>
+    <li><strong>Extensions:</strong> privacy blockers or script blockers can stall the game's requests — test in a clean profile.</li>
+    <li><strong>Lag, not load:</strong> heavy tabs and peak hours cost frames; the Windows client skips the crowded browser path.</li>
+    <li><strong>Phones:</strong> no official mobile app; inconsistent mobile WebGPU is the usual cause. <a href="/download/#mobile">Platform states →</a></li>
+  </ul>
+  <p class="small muted">Fixes compiled from the official-adjacent guide sites' troubleshooting coverage (WebGPU requirement, Linux flag, busy-server notice, browser focus and hardware acceleration as check items), read 2026-11-10 on game v0.143.0.</p>
+</section>
+<div class="cta-band">
+  <h2>Working now?</h2>
+  <p class="btnrow"><a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Back to the game ↗</a>
+  <a class="btn btn-ghost" href="/how-to-play/">Learn the basics</a></p>
+</div>
+</main>
+<footer class="site">
+<div class="cols">
+  <div><h3>Guides</h3><ul>
+    <li><a href="/how-to-play/">How to Play</a></li>
+    <li><a href="/builds/">Class Builds</a></li>
+    <li><a href="/tier-list/">Tier List</a></li>
+    <li><a href="/best-class/">Best Class</a></li>
+  </ul></div>
+  <div><h3>Play &amp; Fix</h3><ul>
+    <li><a href="/download/">Download</a></li>
+    <li><a href="/troubleshooting/">Troubleshooting</a></li>
+    <li><a href="/about/">About This Site</a></li>
+    <li><a href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play on the official site ↗</a></li>
+  </ul></div>
+  <div><h3>The Game</h3><ul>
+    <li><a href="/azeroth-survivor/">What is Azeroth Survivor?</a></li>
+    <li><a href="/azeroth-survivors-game/">The Game &amp; Version History</a></li>
+    <li><a href="https://wow.aethus.pl/" target="_blank" rel="noopener">Official site: wow.aethus.pl ↗</a></li>
+    <li><a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">Official Discord ↗</a></li>
+  </ul></div>
+  <div><h3>The 9 Classes</h3><ul><li><a href="/builds/#hunter">Hunter</a></li><li><a href="/builds/#warlock">Warlock</a></li><li><a href="/builds/#mage">Mage</a></li><li><a href="/builds/#paladin">Paladin</a></li><li><a href="/builds/#warrior">Warrior</a></li><li><a href="/builds/#shaman">Shaman</a></li><li><a href="/builds/#priest">Priest</a></li><li><a href="/builds/#druid">Druid</a></li><li><a href="/builds/#rogue">Rogue</a></li></ul></div>
+</div>
+<div class="legal">
+<p>PlayAzerothSurvivors.com is an independent, fan-made guide and play portal for Azeroth Survivors. Not affiliated with Blizzard Entertainment. Azeroth and World of Warcraft are trademarks of Blizzard Entertainment, Inc. Not affiliated with or endorsed by the game's developer, Aethus.</p>
+<p>Facts on this site were checked against game v0.143.0 on 2026-11-10. We link official sources only and never host game files. English today — Deutsch &amp; Español guides are in preparation.</p>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
