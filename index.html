@@ -6,7 +6,7 @@
 <title>Azeroth Survivors – Play Free Online, Class Builds & Guides | azerothsurvivors</title>
 <meta name="description" content="Play Azeroth Survivors free in your browser (azerothsurvivors): a WoW-inspired survivor roguelike. 9 class builds, tier list, download and loading fixes. No account, no install.">
 <link rel="canonical" href="https://playazerothsurvivors.com/">
-<meta name="theme-color" content="#101214">
+<meta name="theme-color" content="#0f141c">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="sitemap" href="/sitemap.xml">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Context">
@@ -24,7 +24,7 @@
 </head>
 <body>
 <header class="site">
-<a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#d7f000" stroke-width="5"/><path d="M32 12 L50 50 H42 L32 26 L22 50 H14 Z" fill="#b8c400"/></svg>Azeroth Survivors</a>
+<a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#c8a951" stroke-width="5"/><path d="M32 12 L50 50 H42 L32 26 L22 50 H14 Z" fill="#e2e5ea"/></svg>Azeroth Survivors</a>
 <nav class="main" aria-label="Main"><a href="/#play">Play</a><a href="/builds/#classes">Classes</a><a href="/builds/">Builds</a><a href="/tier-list/">Tier List</a><a href="/download/">Download</a><a href="/troubleshooting/">Troubleshoot</a></nav>
 <div class="lang" aria-label="Language"><b>EN</b><span title="Deutsch — in preparation">DE</span><span title="Español — in preparation">ES</span></div>
 </header>
@@ -35,15 +35,18 @@
     <h1>Azeroth Survivors</h1>
     <p class="sub">Play the free WoW-inspired survivors roguelike in your browser.</p>
     <div class="btnrow">
-      <a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play Free Online ↗</a>
+      <a class="btn btn-gold" href="#game">Play Free Online</a>
       <a class="btn btn-ghost" href="/how-to-play/">How to Play</a>
     </div>
-    <span class="opennote">Official game at wow.aethus.pl — opens in a new tab. Free to play, no login.</span>
+    <span class="opennote">Play opens the official game in a new tab — in-page instant play is coming with v1.1.</span>
     <p class="trust">An independent, fan-made guide and play portal. Not affiliated with Blizzard Entertainment.</p>
   </div>
   <div class="pv-wrap">
-    <div class="preview" role="img" aria-label="Preview: the nine class colors of Azeroth Survivors with a central play button">
-      <div class="pv-grid">
+    <!-- 1110 22:2x 紧急改单（深研⑧）：官方 rogue.js 有 OWN_HOSTS 域名白名单，iframe 嵌官方=弹 "Fake website detected!" 拒启动——直嵌方案作废。
+         此框=样式化游戏占位（自绘九职业色画面，零外链图片），大 Play 暂跳官方（唯一能玩的路），#game 锚点供全站 Play 按钮指入；
+         自建 RE 构建（1.5-2 天 MVP）上线后真替换站内玩。配色：石板底+金边 glow+亮金 CTA（22:22 拍 B 终版）。 -->
+    <div class="game-frame" id="game" role="img" aria-label="Game frame placeholder: the nine class colors of Azeroth Survivors with a play button">
+      <div class="gf-grid" aria-hidden="true">
       <span style="background:var(--cls-hunter)" title="Hunter"></span>
       <span style="background:var(--cls-warlock)" title="Warlock"></span>
       <span style="background:var(--cls-mage)" title="Mage"></span>
@@ -54,9 +57,12 @@
       <span style="background:var(--cls-druid)" title="Druid"></span>
       <span style="background:var(--cls-rogue)" title="Rogue"></span>
       </div>
-      <div class="pv-shade"></div>
-      <a class="pv-play" href="https://wow.aethus.pl/" target="_blank" rel="noopener" aria-label="Play free online">&#9654;</a>
-      <span class="pv-tag">live at wow.aethus.pl · opens in new tab</span>
+      <div class="gf-shade" aria-hidden="true"></div>
+      <div class="gf-cta">
+        <a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play on the official site ↗</a>
+        <span class="gf-soon">Instant play here is coming (v1.1)</span>
+      </div>
+      <span class="gf-tag">the game lives at wow.aethus.pl · opens in a new tab</span>
     </div>
     <p class="rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.8/5 · 113,690 members on the official Discord
     <span class="src">Community size per the public Discord API, checked 2026-11-10 — a scale anchor, not an official rating.</span></p>
@@ -141,7 +147,7 @@
   <span class="kicker">Download &amp; play</span>
   <h2>Three ways in — all official</h2>
   <div class="grid g3">
-    <div class="panel"><h3>Browser (recommended)</h3><p>Open <a href="https://wow.aethus.pl/" target="_blank" rel="noopener">wow.aethus.pl ↗</a> in a current Chrome, Edge or Safari and press Play. Nothing to install, no account.</p></div>
+    <div class="panel"><h3>Browser (recommended)</h3><p>Press play — <a href="#game">the game frame at the top of this page</a> takes you straight into the official game. A current Chrome, Edge or Safari is all you need; nothing to install, no account.</p></div>
     <div class="panel"><h3>Windows client</h3><p>The official Windows download is linked from the official site. Use it when the browser build is full or slow — it also enables offline play. <a href="/download/">Download guide →</a></p></div>
     <div class="panel"><h3>Mobile &amp; Deck</h3><p>No official mobile app; phones need a WebGPU-capable browser and support is inconsistent. Steam Deck is covered by community guides. <a href="/download/#mobile">Details →</a></p></div>
   </div>
@@ -169,9 +175,9 @@
 
 <section class="cta-green">
   <h2>Ready to play? Pick a class first.</h2>
-  <p class="btnrow"><a class="btn btn-dark" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play Free Online ↗</a>
+  <p class="btnrow"><a class="btn btn-gold" href="#game">Play Free Online</a>
   <a class="btn btn-outline-dark" href="/builds/">Browse Builds</a></p>
-  <p class="small cta-note">Nine classes, one free browser tab — the official game opens in a new window.</p>
+  <p class="small cta-note">Nine classes, one free browser tab — instant in-page play lands with v1.1.</p>
 </section>
 
 <section id="faq">
