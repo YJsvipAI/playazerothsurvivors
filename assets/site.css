@@ -253,6 +253,7 @@ a.cls.mini:hover .tname{color:#fff}
 .gf-cta .btn{white-space:nowrap}
 .gf-soon{font-size:.72rem;letter-spacing:.06em;color:#dfe3e9;background:rgba(11,14,21,.72);
   border-radius:999px;padding:.14rem .7rem;border:1px solid rgba(255,255,255,.18)}
+.gf-busy{font-size:.78rem;color:var(--muted);margin:0;line-height:1.5}
 .gf-tag{position:absolute;left:12px;bottom:10px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
 /* ---------- 1110 二批：九职业页（天赋树三层级自绘/视频占位/来源区） ---------- */
