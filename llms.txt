@@ -30,6 +30,15 @@ Nine: Hunter, Warlock, Mage, Paladin, Warrior, Shaman, Priest, Druid, Rogue. On 
 - [Azeroth Survivors Game](https://playazerothsurvivors.com/azeroth-survivors-game/): game overview, version history (v0.87 to v0.143.0), and where to play (browser / Windows / mobile).
 - [How to Play](https://playazerothsurvivors.com/how-to-play/): beginner walkthrough — quick start, choosing a first class, controls, and where saves live.
 - [Builds](https://playazerothsurvivors.com/builds/): build hub for all 9 classes with S-tier picks and role notes for game v0.143.0.
+- [Hunter Build](https://playazerothsurvivors.com/builds/hunter/): S-tier crit sniper — Kill Shot capstone, Rapid Fire milestones, skill draft order, zone fit, race picks and FAQ.
+- [Warlock Build](https://playazerothsurvivors.com/builds/warlock/): S-tier plague spreader — Seed of Corruption capstone, DoT-jump milestones, Siphon Life, race picks and FAQ.
+- [Mage Build](https://playazerothsurvivors.com/builds/mage/): S-tier glass cannon — Pyroclasm fire-chain capstone, Frost control alternative, defensive-card timing, race picks and FAQ.
+- [Paladin Build](https://playazerothsurvivors.com/builds/paladin/): A tier endgame, S tier for a first clear — Consecration shield bastion, Divine Storm crit build, death save, race picks and FAQ.
+- [Warrior Build](https://playazerothsurvivors.com/builds/warrior/): A tier, easiest of all nine — Bladestorm eternal whirlwind, Cleave-first draft order, Titan shield alternative and FAQ.
+- [Shaman Build](https://playazerothsurvivors.com/builds/shaman/): A tier — Elemental Mastery storm chain, Totemic Wrath stationary build, reworked Enhancement note, race picks and FAQ.
+- [Priest Build](https://playazerothsurvivors.com/builds/priest/): B tier but very safe — Shadowform pain spread, Smite-first draft order, shield timing and FAQ.
+- [Druid Build](https://playazerothsurvivors.com/builds/druid/): B tier comfort pick — Force of Nature treants, Starfall milestones, four capstones with form exclusivity, and FAQ.
+- [Rogue Build](https://playazerothsurvivors.com/builds/rogue/): B tier, hardest of the nine — Toxic Bloom poison chain, Cheat Death survival, elite/guardian matchup and FAQ.
 - [Tier List](https://playazerothsurvivors.com/tier-list/): all 9 classes ranked S/A/B with reasons, re-checked each patch.
 - [Best Class](https://playazerothsurvivors.com/best-class/): best class picks by playstyle (safest, fastest, most beginner-friendly).
 - [Download](https://playazerothsurvivors.com/download/): official download and play channels only — browser play and the official Windows client; safety notes.

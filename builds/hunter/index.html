@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azeroth Survivors Hunter Build – Talents, Skills &amp; Priority (v0.143.0)</title>
+<meta name="description" content="Azeroth Survivors Hunter build for game v0.143.0: S-tier ranged pick — Kill Shot crit-sniper talent path, Auto Shot to Aimed Shot skill priority, race picks and the 13-zone path. Checked 2026-11-10.">
+<link rel="canonical" href="https://playazerothsurvivors.com/builds/hunter/">
+<meta name="theme-color" content="#101214">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="sitemap" href="/sitemap.xml">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Context">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PlayAzerothSurvivors">
+<meta property="og:title" content="Azeroth Survivors Hunter Build – Talents, Skills & Priority (v0.143.0)">
+<meta property="og:description" content="S-tier ranged Hunter: Kill Shot crit-sniper talent path, Auto Shot to Aimed Shot skill priority, race picks and the 13-zone path.">
+<meta property="og:url" content="https://playazerothsurvivors.com/builds/hunter/">
+<meta property="og:locale" content="en_US">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "url": "https://playazerothsurvivors.com/", "name": "PlayAzerothSurvivors", "description": "Independent, fan-made guide and play portal for Azeroth Survivors. Not affiliated with Blizzard Entertainment or the developer Aethus.", "inLanguage": "en"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Hunter good in Azeroth Survivors?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — S tier on the current community ranking: #3 of 9 for ease and #1 of 9 for damage ceiling. It kills from a safe distance, pets add free damage, and it has the scariest single-target crits in the game (azerothsurvivorsgame.com, Hunter page measured on v0.130.1; ranking snapshot v0.142.0)."}}, {"@type": "Question", "name": "What is the best Hunter build?", "acceptedAnswer": {"@type": "Answer", "text": "The Aimed Shot crit sniper: Kill Shot capstone, the free-Aimed-Shot milestones, crit chance and flat damage passives, then crit rings. Every kill can reset Aimed Shot, so dense waves chain into huge crits. A Beast pack build (Bestial Wrath) is the safest alternative while you learn boss patterns."}}, {"@type": "Question", "name": "What are the Hunter capstone talents?", "acceptedAnswer": {"@type": "Answer", "text": "Kill Shot, Bestial Wrath and Wyvern Sting. One capstone per run at 30 talent points, and respecs are free between runs (per the talent trees on azerothsurvivorsgame.com and the Wiki)."}}, {"@type": "Question", "name": "What is the best race for Hunter?", "acceptedAnswer": {"@type": "Answer", "text": "Troll (Berserking speeds up cooldowns) or Dwarf (Stoneform shield plus gun damage). Default Hunter races are Dwarf, Night Elf, Orc, Tauren and Troll; any race is unlockable with achievement points since v0.120.0."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="site">
+<a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#d7f000" stroke-width="5"/><path d="M32 12 L50 50 H42 L32 26 L22 50 H14 Z" fill="#b8c400"/></svg>Azeroth Survivors</a>
+<nav class="main" aria-label="Main"><a href="/#play">Play</a><a href="/builds/#classes">Classes</a><a href="/builds/">Builds</a><a href="/tier-list/">Tier List</a><a href="/download/">Download</a><a href="/troubleshooting/">Troubleshoot</a></nav>
+<div class="lang" aria-label="Language"><b>EN</b><span title="Deutsch — in preparation">DE</span><span title="Español — in preparation">ES</span></div>
+</header>
+<main>
+<nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/builds/">Builds</a> › <span aria-current="page">Hunter</span></nav>
+<section class="hero">
+  <span class="badge">Build guide · written for game v0.143.0 · checked 2026-11-10</span>
+  <h1>Azeroth Survivors Hunter Build</h1>
+  <p class="sub">The S-tier crit sniper — aim from a safe distance, let pets soak the hits, and reset Aimed Shot on every kill.</p>
+  <div class="btnrow"><a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play Hunter ↗</a>
+  <a class="btn btn-ghost" href="/builds/">All 9 builds</a></div>
+</section>
+<div class="topline"><span class="pill"><span class="tb-S">Tier S</span></span><span class="pill">Ease #3 of 9</span><span class="pill">Damage ceiling #1 of 9</span><span class="pill">Ranged</span><span class="pill">240 base HP</span><span class="pill">Start: Auto Shot</span><span class="pill">Best races: Dwarf · Troll</span></div>
+<p class="small muted">Tier and rankings from the guide-site snapshot on game v0.142.0; base health from the Wiki (v0.128.0). Talent and damage numbers were measured on game 0.14x and may have changed since — the Hunter page itself was measured on v0.130.1, so treat exact values as pre-0.143 data points.</p>
+
+<section id="talents">
+  <span class="kicker">Talent tree</span>
+  <h2>Hunter talent recommendations, in three layers</h2>
+  <p class="lede">Every class grows one talent tree between runs — roughly 39–40 talents, 51 points total, a new row every 5 points, with a milestone at 10 and 20 points and a single capstone slot at 30 (one capstone per run; respecs are free). The Hunter path below is the crit-sniper standard.</p>
+  <ul class="taltree">
+    <li><span class="tlev">Capstone · 30 pts</span><span class="tpick">Kill Shot</span>
+      <span class="tnote">Starts your run with Aimed Shot, cuts its cooldown 15%, and Aimed Shot resets on every kill (up to once every 2 seconds). This is the engine of the “100k crit” sniper build.</span>
+      <ul class="tsub">
+        <li><span class="tp">Alt — Bestial Wrath:</span> the Beast pack build; safest way to learn boss patterns while pets do heavy lifting.</li>
+        <li><span class="tp">Alt — Wyvern Sting:</span> trap build; starts with Frost Trap and drops an Explosive Trap under you every 5 seconds.</li>
+      </ul>
+    </li>
+    <li><span class="tlev">Milestones · 10 / 20 pts</span><span class="tpick">Rapid Fire (MM 20) · Tame Beast + Frenzy (BM 10/20)</span>
+      <span class="tnote">Priority picks: Rapid Fire sends a free Aimed Shot every 6 shots; Tame Beast &amp; Frenzy give your wolf a 75% chance to bite out a free Multi-Shot.</span>
+      <ul class="tsub">
+        <li><span class="tp">MM line:</span> Piercing Shots (10) → Rapid Fire (20)</li>
+        <li><span class="tp">BM line:</span> Tame Beast (10) → Frenzy (20)</li>
+        <li><span class="tp">Survival line:</span> Explosive Ammunition (20)</li>
+      </ul>
+    </li>
+    <li><span class="tlev">Path passives</span><span class="tpick">Crit chance · crit damage · all damage · cooldowns</span>
+      <span class="tnote">Lethal Shots, Mortal Shots, Ranged Weapon Specialization, Ferocity and friends — the crit-sniper stack that turns Aimed Shot resets into one-shot waves.</span>
+    </li>
+  </ul>
+</section>
+
+<section id="skills">
+  <span class="kicker">Level-up draft</span>
+  <h2>Core skills &amp; pick priority</h2>
+  <p class="lede">Every level-up offers three loot-colored cards. Spend them roughly in this order:</p>
+  <ul class="checks">
+    <li><strong>Auto Shot first</strong> — your always-on starter; early ranks alone clear the first waves.</li>
+    <li><strong>Multi-Shot and Volley next</strong> — widen Auto Shot into screen-clearing area damage (editor's note, consistent with the .net build direction).</li>
+    <li><strong>Aimed Shot and Serpent Sting</strong> — your single-target answers for elites and scheduled bosses.</li>
+    <li><strong>Crit and flat-damage passives</strong> — with the Kill Shot tree online, every kill can chain into a free Aimed Shot crit.</li>
+    <li><strong>Explosive Trap is the insurance</strong> — it fires when something reaches melee range; Frost Trap sets up the Wyvern Sting trap build.</li>
+  </ul>
+  <p class="small muted">Core spells you will see: Auto Shot · Multi-Shot · Aimed Shot · Arcane Shot · Volley · Explosive Trap · Frost Trap (per azerothsurvivorsgame.com's Hunter spell list). Gear that loves this build: Band of Accuria, Master Dragonslayer's Ring, Hand of Justice, Gnomish Universal Remote, Amulet of Vek'nilash (+1 target), Onyxia Tooth Pendant — Tracker's through Cryptstalker sets, bows up to Rhok'delar.</p>
+  <div class="notice"><b>Avoid:</b> standing still against bosses — the whole Hunter kit assumes you keep moving.</div>
+</section>
+
+<section id="zones">
+  <span class="kicker">Where it shines</span>
+  <h2>Zones and the Hunter's fit</h2>
+  <p class="lede">Zones unlock per class: win a zone with one class and the next zone opens for that class only. The 13-zone path every Hunter walks:</p>
+  <p><span class="pill">1 Elwynn Forest</span><span class="pill">2 Duskwood</span><span class="pill">3 Warsong Gulch</span><span class="pill">4 Un'Goro Crater</span><span class="pill">5 Arathi Basin</span><span class="pill">6 Feralas</span><span class="pill">7 Gurubashi Arena</span><span class="pill">8 Scarlet Monastery</span><span class="pill">9 Alterac Valley</span><span class="pill">10 Blackrock Mountain</span><span class="pill">11 Scholomance</span><span class="pill">12 Gates of Ahn'Qiraj</span><span class="pill">13 Naxxramas</span></p>
+  <ul class="checks">
+    <li><strong>Open maps are home turf</strong> — Un'Goro Crater and Alterac Valley give the kiter room to work (editor's note; re-check against your own zone runs).</li>
+    <li><strong>Crowded arenas need the traps</strong> — Gurubashi Arena's encircling spawns are where Frost Trap and the trap build earn their slot.</li>
+  </ul>
+  <p class="small muted">Full zone order with final bosses and arrival times: <a href="/how-to-play/#zones">the 13 zones table →</a></p>
+</section>
+
+<section id="race">
+  <span class="kicker">Hero pick</span>
+  <h2>Races &amp; mobility for Hunter</h2>
+  <ul class="checks">
+    <li><strong>Troll</strong> — Berserking: cooldowns recover 30% faster for 10 seconds; plus 3% crit and regeneration.</li>
+    <li><strong>Dwarf</strong> — Stoneform shield plus gun specialization (+6% damage) and Treasure Finding (+30% pickup radius).</li>
+    <li><strong>Defaults &amp; unlocks</strong> — Dwarf, Night Elf, Orc, Tauren and Troll are available by default; since v0.120.0 achievement points unlock any race for any class (Rewards → Races on the title screen).</li>
+    <li><strong>Mobility</strong> — Hunter's movement skill is <em>Aspect of the Cheetah</em> (from level 5, on F, steers with your mouse).</li>
+  </ul>
+</section>
+
+<section id="video">
+  <span class="kicker">Watch it played</span>
+  <h2>Hunter build video</h2>
+  <!-- YouTube 嵌入位（1110 二批占位规矩：首版零外链嵌入，嵌入前先核可播性）。首选：MASTERO《World of Warcraft: Azeroth Survivors - Best Hunter build l Heroic Mode made easy》 watch?v=fIdPqIHeQRs（2026-10-29，描述已抓：Marksman 满配天赋+双暴击戒指+CD 饰品四件套）。备选：《Hunter Leveling Guide + full run》 watch?v=Q4AXk5kxNPg。 -->
+  <div class="vidslot" role="img" aria-label="Video placeholder: Azeroth Survivors Hunter build guide">
+    <span class="vtag">Video guide</span>
+    <span class="vplay">&#9654;</span>
+    <span class="vtitle">“World of Warcraft: Azeroth Survivors — Best Hunter build l Heroic Mode made easy” — MASTERO on YouTube</span>
+  </div>
+  <p class="small muted">Marksman talents maxed, double crit rings and four cooldown trinkets — a Heroic-mode run through the full sniper build. The embed lands in our next media pass; the video lives on YouTube.</p>
+</section>
+
+<section id="faq">
+  <span class="kicker">FAQ</span>
+  <h2>Azeroth Survivors Hunter FAQ</h2>
+  <details class="faq"><summary>Is Hunter good in Azeroth Survivors?</summary><div class="a"><p>Yes — S tier on the current community ranking: #3 of 9 for ease and <strong>#1 of 9 for damage ceiling</strong>. It kills from a safe distance, pets add free damage, and it owns the scariest single-target crits in the game. (azerothsurvivorsgame.com, Hunter page measured on v0.130.1; ranking snapshot v0.142.0.)</p></div></details>
+  <details class="faq"><summary>What is the best Hunter build?</summary><div class="a"><p>The Aimed Shot crit sniper: <strong>Kill Shot capstone → free-Aimed-Shot milestones → crit chance / flat damage passives → crit rings</strong>. Every kill can reset Aimed Shot, so dense waves chain into huge crits. The Beast pack build (Bestial Wrath) is the safest alternative while you learn boss patterns.</p></div></details>
+  <details class="faq"><summary>What are the Hunter capstone talents?</summary><div class="a"><p>Kill Shot, Bestial Wrath and Wyvern Sting — one capstone per run at 30 talent points, and respecs are free between runs. (Talent trees per azerothsurvivorsgame.com and the azeroth-survivors.org Wiki.)</p></div></details>
+  <details class="faq"><summary>What is the best race for Hunter?</summary><div class="a"><p>Troll (Berserking speeds cooldowns) or Dwarf (Stoneform shield + gun damage). Defaults are Dwarf, Night Elf, Orc, Tauren and Troll — and since v0.120.0 achievement points unlock any race for any class.</p></div></details>
+</section>
+
+<section class="sources">
+  <span class="kicker">Sources</span>
+  <h2>Sources &amp; version notes</h2>
+  <ul>
+    <li>Class tier, ease (#3/9) and damage ceiling (#1/9): azerothsurvivorsgame.com class snapshot on v0.142.0 (read 2026-11-10).</li>
+    <li>Talent points, spell pool (11 spells) and 240 base health: azeroth-survivors.org Wiki, v0.128.0 (build 678382d4); Hunter gameplay numbers on azerothsurvivorsgame.com measured on v0.130.1 — treat values as pre-0.143.</li>
+    <li>Draft priorities and gear list: azerothsurvivors.org Hunter build page (2026-09-24 data sync), azeroth-survivors.net builds hub, azerothsurvivorsgame.com build steps.</li>
+    <li>Video anchor: MASTERO, “World of Warcraft: Azeroth Survivors — Best Hunter build l Heroic Mode made easy” (YouTube, 2026-10-29).</li>
+    <li>This page is written for game v0.143.0 — sources above were measured on the versions stated; numbers may have changed since.</li>
+  </ul>
+</section>
+
+<section class="cta-band">
+  <h2>Take the sniper into a run</h2>
+  <p class="btnrow"><a class="btn btn-gold" href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play Free Online ↗</a>
+  <a class="btn btn-ghost" href="/builds/warlock/">Next build: Warlock</a></p>
+</section>
+<p class="small muted center">Independent fan guide — not affiliated with Blizzard Entertainment or developer Aethus. Hunter facts re-checked against the sources above on 2026-11-10.</p>
+</main>
+<footer class="site">
+<div class="cols">
+  <div><h3>Guides</h3><ul>
+    <li><a href="/how-to-play/">How to Play</a></li>
+    <li><a href="/builds/">Class Builds</a></li>
+    <li><a href="/tier-list/">Tier List</a></li>
+    <li><a href="/best-class/">Best Class</a></li>
+  </ul></div>
+  <div><h3>Play &amp; Fix</h3><ul>
+    <li><a href="/download/">Download</a></li>
+    <li><a href="/troubleshooting/">Troubleshooting</a></li>
+    <li><a href="/about/">About This Site</a></li>
+    <li><a href="https://wow.aethus.pl/" target="_blank" rel="noopener">Play on the official site ↗</a></li>
+  </ul></div>
+  <div><h3>The Game</h3><ul>
+    <li><a href="/azeroth-survivor/">What is Azeroth Survivor?</a></li>
+    <li><a href="/azeroth-survivors-game/">The Game &amp; Version History</a></li>
+    <li><a href="https://wow.aethus.pl/" target="_blank" rel="noopener">Official site: wow.aethus.pl ↗</a></li>
+    <li><a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">Official Discord ↗</a></li>
+  </ul></div>
+  <div><h3>The 9 Classes</h3><ul><li><a href="/builds/hunter/">Hunter</a></li><li><a href="/builds/warlock/">Warlock</a></li><li><a href="/builds/mage/">Mage</a></li><li><a href="/builds/paladin/">Paladin</a></li><li><a href="/builds/warrior/">Warrior</a></li><li><a href="/builds/shaman/">Shaman</a></li><li><a href="/builds/priest/">Priest</a></li><li><a href="/builds/druid/">Druid</a></li><li><a href="/builds/rogue/">Rogue</a></li></ul></div>
+</div>
+<div class="legal">
+<p>PlayAzerothSurvivors.com is an independent, fan-made guide and play portal for Azeroth Survivors. Not affiliated with Blizzard Entertainment. Azeroth and World of Warcraft are trademarks of Blizzard Entertainment, Inc. Not affiliated with or endorsed by the game's developer, Aethus.</p>
+<p>Facts on this site were checked against game v0.143.0 on 2026-11-10. We link official sources only and never host game files. English today — Deutsch &amp; Español guides are in preparation.</p>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

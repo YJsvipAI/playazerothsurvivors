@@ -242,3 +242,38 @@ a.cls.mini:hover .tname{color:#fff}
 .btn-dark:hover{background:#1e2124;color:#d7f000;text-decoration:none}
 .btn-outline-dark{color:#101214;border:2px solid #101214;background:transparent}
 .btn-outline-dark:hover{background:rgba(16,18,20,.08);color:#101214;text-decoration:none}
+
+/* ---------- 1110 二批：九职业页（天赋树三层级自绘/视频占位/来源区） ---------- */
+.taltree{list-style:none;margin:.6rem 0}
+.taltree>li{position:relative;padding:.55rem 0 .65rem 1.7rem;border-left:2px solid var(--line-strong);margin-left:.5rem}
+.taltree>li::before{content:"";position:absolute;left:-7px;top:1.05rem;width:10px;height:10px;border-radius:50%;
+  background:var(--gold);box-shadow:0 0 8px rgba(215,240,0,.5)}
+.taltree .tlev{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold);margin-right:.5rem}
+.taltree .tpick{font-family:var(--serif);color:var(--gold-hi);font-weight:700}
+.taltree .tnote{color:var(--text);font-size:.95rem;display:block;margin-top:.15rem}
+.taltree .tsub{list-style:none;margin:.35rem 0 0;padding-left:.2rem}
+.taltree .tsub li{padding:.18rem 0;color:var(--text);font-size:.95rem}
+.taltree .tsub .tp{color:var(--gold);font-weight:600}
+.vidslot{position:relative;aspect-ratio:16/9;max-width:640px;margin:.9rem auto;border:1px solid var(--line-strong);
+  border-radius:var(--radius);overflow:hidden;
+  background:radial-gradient(120% 100% at 50% 0%, rgba(215,240,0,.10), transparent 62%),
+    linear-gradient(180deg,var(--panel),var(--bg-2))}
+.vidslot .vplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;
+  background:rgba(215,240,0,.92);color:#101214;display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+  box-shadow:0 0 26px rgba(215,240,0,.4)}
+.vidslot .vtag{position:absolute;left:12px;top:10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.vidslot .vtitle{position:absolute;left:0;right:0;bottom:14px;padding:0 1.2rem;color:var(--text);font-size:.9rem;text-align:center}
+.sources{margin-top:1.6rem;padding-top:1rem;border-top:1px solid var(--line)}
+.sources h2{font-size:1.05rem}
+.sources ul{list-style:none;margin:.4rem 0}
+.sources li{font-size:.82rem;color:var(--muted);margin:.32rem 0;padding-left:1.3rem;position:relative}
+.sources li::before{content:"§";position:absolute;left:.15rem;color:var(--gold);top:.08rem}
+.topline .pill a{color:inherit}
+nav.crumb{font-size:.85rem;color:var(--muted);margin-bottom:1rem}
+nav.crumb a{color:var(--muted)}
+nav.crumb a:hover{color:var(--gold-hi)}
+nav.crumb span[aria-current]{color:var(--gold-hi);font-weight:600}
+a.panel.cls{color:inherit;display:block}
+a.panel.cls:hover{text-decoration:none;border-color:rgba(215,240,0,.5)}
+.cls .linkish{font-size:.88rem;color:var(--gold-hi);margin:.35rem 0 0}
