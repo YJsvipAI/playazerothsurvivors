@@ -45,6 +45,19 @@ Nine: Hunter, Warlock, Mage, Paladin, Warrior, Shaman, Priest, Druid, Rogue. On 
 - [Troubleshooting](https://playazerothsurvivors.com/troubleshooting/): fixes for not loading, black screen, "Too many people are playing", and "WebGPU found no usable graphics card".
 - [About](https://playazerothsurvivors.com/about/): who runs this site and how facts are sourced.
 
+## Languages (added 2026-11-11)
+
+German and Spanish guide pages, targeted at what local-language players actually search (not mirrored translations). hreflang pairs these with the English pages; x-default is the English site.
+
+- [Deutsch: Azeroth Survivors spielen](https://playazerothsurvivors.com/de/): German starter guide — where to play, free/safety, how to switch the game to German, the 9 class names in German.
+- [Deutsch: Klassen-Guides](https://playazerothsurvivors.com/de/builds/): German builds hub with the 9 German class names.
+- [Deutsch: Hexenmeister-Build](https://playazerothsurvivors.com/de/builds/warlock/): German Warlock build — talent layers, draft priority, zones, races, FAQ.
+- [Deutsch: Krieger-Build](https://playazerothsurvivors.com/de/builds/warrior/): German Warrior build — Bladestorm whirlwind path, draft priority, zones, races, FAQ.
+- [Deutsch: Tier-Liste](https://playazerothsurvivors.com/de/tier-list/): German tier list — S/A/B with reasons, "beste Klasse" direct answers.
+- [Español: Cómo jugar](https://playazerothsurvivors.com/es/): Spanish starter guide — three steps to play, free/safety, Spanish interface, the 9 class names in Spanish.
+- [Español: Descargar para PC](https://playazerothsurvivors.com/es/download/): Spanish download page — official Windows client steps and platform table.
+- [Español: No carga](https://playazerothsurvivors.com/es/not-loading/): Spanish troubleshooting — "no me deja jugar" direct answers (black screen, server full, WebGPU).
+
 ## How this site states facts
 
 Version-dependent statements carry the game version and check date (currently v0.143.0, 2026-11-10). Rankings are community opinions compiled from the dedicated guide sites and player videos of the period, not official game text.

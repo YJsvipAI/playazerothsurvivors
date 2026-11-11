@@ -79,6 +79,9 @@ nav.main a:hover{color:var(--accent);background:rgba(200,169,81,.10);text-decora
   border-left:1px solid var(--line);padding-left:.85rem}
 .lang b{color:var(--head);font-weight:700}
 .lang span{color:var(--muted);padding:.2rem .4rem;border-radius:6px;cursor:default}
+/* 1111 德西批：header 语言真链接 + 页脚语言行 */
+.lang a{color:var(--muted);padding:.2rem .4rem;border-radius:6px;text-decoration:none}
+.lang a:hover{color:var(--accent);background:rgba(200,169,81,.10);text-decoration:none}
 
 /* ---------- Hero ---------- */
 .hero{text-align:center;padding:3.2rem 0 2.4rem;position:relative}
@@ -195,6 +198,12 @@ footer.site a:hover{color:var(--accent)}
 .legal{max-width:1080px;margin:0 auto;padding:1rem 1.1rem 1.6rem;color:var(--muted);font-size:.82rem;
   border-top:1px solid var(--line)}
 .legal p+p{margin-top:.4rem}
+/* 1111 德西批：页脚 Language 行（全站统一） */
+.langline{max-width:1080px;margin:0 auto;padding:1rem 1.1rem .2rem;color:var(--muted);font-size:.88rem}
+.langline b{color:#c3c9d2;margin-right:.35rem}
+.langline a{color:var(--text);text-decoration:none}
+.langline a:hover{color:var(--accent);text-decoration:underline}
+.langline [aria-hidden]{margin:0 .15rem}
 
 /* ---------- 杂项 ---------- */
 ul.checks{list-style:none;margin:.4rem 0}

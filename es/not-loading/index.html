@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>«No me deja jugar a Azeroth Survivors» – soluciones en español (v0.143.0)</title>
+<meta name="description" content="Azeroth Survivors no me deja jugar: soluciones en español para la pantalla negra, el aviso «Too many people are playing» (servidor lleno) y el error «WebGPU found no usable graphics card» — respuestas directas y listas de pasos.">
+<link rel="canonical" href="https://playazerothsurvivors.com/es/not-loading/">
+<link rel="alternate" hreflang="en" href="https://playazerothsurvivors.com/troubleshooting/">
+<link rel="alternate" hreflang="es" href="https://playazerothsurvivors.com/es/not-loading/">
+<link rel="alternate" hreflang="x-default" href="https://playazerothsurvivors.com/troubleshooting/">
+<meta name="theme-color" content="#0f141c">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="sitemap" href="/sitemap.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PlayAzerothSurvivors">
+<meta property="og:title" content="«No me deja jugar a Azeroth Survivors» – soluciones en español (v0.143.0)">
+<meta property="og:description" content="Si Azeroth Survivors no te deja jugar: pantalla negra, servidor lleno («Too many people are playing») y errores de WebGPU — respuestas directas en español.">
+<meta property="og:url" content="https://playazerothsurvivors.com/es/not-loading/">
+<meta property="og:locale" content="es_ES">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "url": "https://playazerothsurvivors.com/", "name": "PlayAzerothSurvivors", "description": "Guía independiente hecha por fans y portal de juego para Azeroth Survivors. Sin afiliación con Blizzard Entertainment ni con el desarrollador Aethus.", "inLanguage": "es"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Por qué no me deja jugar Azeroth Survivors?", "acceptedAnswer": {"@type": "Answer", "text": "Las dos causas habituales: tu navegador no tiene WebGPU (el juego dibuja su mundo con él) o el servidor oficial está lleno. Usa un Chrome, Edge o Safari actual, mantén activada la aceleración de hardware y, si la página dice que el servidor está lleno, espera un poco y recarga."}}, {"@type": "Question", "name": "¿Cómo arreglo la pantalla negra en Azeroth Survivors?", "acceptedAnswer": {"@type": "Answer", "text": "Un lienzo negro casi siempre significa que falta WebGPU o que falla: actualiza tu navegador, activa la aceleración de hardware y, en Chrome de Linux, activa chrome://flags/#enable-unsafe-webgpu. Si sigue fallando, juega el cliente oficial de Windows."}}, {"@type": "Question", "name": "¿Qué significa «Too many people are playing»?", "acceptedAnswer": {"@type": "Answer", "text": "El servidor oficial está a plena capacidad. El aviso desaparece solo — recarga la página y vuelve a pulsar Play un poco más tarde, o cambia al cliente oficial de Windows mientras la versión de navegador esté llena."}}, {"@type": "Question", "name": "¿Qué significa «WebGPU found no usable graphics card»?", "acceptedAnswer": {"@type": "Answer", "text": "Tu navegador no pudo crear un dispositivo WebGPU con tu tarjeta gráfica. Actualiza los drivers de la GPU y el navegador, activa la aceleración de hardware y, si tu GPU es demasiado vieja para WebGPU, usa el cliente de Windows."}}, {"@type": "Question", "name": "El juego va a tirones — ¿qué puedo hacer?", "acceptedAnswer": {"@type": "Answer", "text": "Cierra las pestañas pesadas, deja la aceleración de hardware activada, prueba otro navegador con WebGPU y, en horas punta, considera el cliente de Windows, que evita la vía de navegador llena."}}, {"@type": "Question", "name": "¿Funciona en móviles?", "acceptedAnswer": {"@type": "Answer", "text": "No hay app oficial para móvil; los navegadores de móvil soportan WebGPU de forma irregular. Si no carga en tu teléfono, esa suele ser la razón — un navegador de escritorio es la forma más fiable de jugar."}}]}</script>
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header class="site">
+<a class="brand" href="/es/"><svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true"><rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#c8a951" stroke-width="5"/><path d="M32 12 L50 50 H42 L32 26 L22 50 H14 Z" fill="#e2e5ea"/></svg>Azeroth Survivors</a>
+<nav class="main" aria-label="Navegación principal"><a href="/es/#jugar">Jugar</a><a href="/es/download/">Descargar</a><a href="/es/not-loading/">No carga</a><a href="/builds/">Clases</a><a href="/tier-list/">Tier List</a></nav>
+<div class="lang" aria-label="Idioma"><a href="/" lang="en" hreflang="en" title="English">EN</a><a href="/de/" lang="de" hreflang="de" title="Deutsch">DE</a><b>ES</b></div>
+</header>
+<main>
+<section class="hero">
+  <span class="kicker">Soluciones · verificado el 2026-11-10 · juego v0.143.0</span>
+  <h1>«No me deja jugar» — qué hacer</h1>
+  <p class="sub">No carga, pantalla negra, servidor lleno o un error de WebGPU — las cuatro soluciones, en palabras claras.</p>
+  <div class="btnrow"><a class="btn btn-gold" href="/es/#jugar">Volver al juego</a>
+  <a class="btn btn-ghost" href="/es/download/">Cliente de Windows</a></div>
+</section>
+
+<section id="no-carga">
+  <h2>Azeroth Survivors no carga</h2>
+  <p class="lede"><strong>Respuesta directa:</strong> el juego necesita un navegador con WebGPU y un servidor oficial alcanzable — actualiza Chrome, Edge o Safari a la versión actual, deja la aceleración de hardware activada y, si el servidor está ocupado, espera y recarga.</p>
+  <ul class="checks">
+    <li>Usa un <strong>Chrome, Edge o Safari actual</strong> — el juego dibuja con WebGPU, que los navegadores viejos no tienen.</li>
+    <li>Comprueba que la <strong>aceleración de hardware</strong> esté activada en los ajustes del sistema del navegador.</li>
+    <li>Haz clic dentro de la ventana del juego para que tenga el <strong>foco del navegador</strong>.</li>
+    <li>¿Sale «Too many people»? Eso es capacidad, no tu configuración — <a href="#servidor-lleno">más abajo</a>.</li>
+    <li>¿Sigues sin poder entrar? <a href="/es/download/">El cliente oficial de Windows</a> esquiva los problemas del navegador por completo.</li>
+  </ul>
+</section>
+
+<section id="pantalla-negra">
+  <h2>Pantalla negra (o lienzo negro)</h2>
+  <p class="lede"><strong>Respuesta directa:</strong> una pantalla negra suele significar que falta WebGPU o que falla en tu equipo — actualiza el navegador, activa la aceleración de hardware y, en Chrome de Linux, activa el flag de WebGPU; el cliente de Windows es la alternativa.</p>
+  <ul class="checks">
+    <li>Distingue entre <strong>pantalla negra y carga normal</strong> — una partida nueva carga oleadas unos segundos al empezar; dale unos segundos.</li>
+    <li>Actualiza el navegador a la última versión (WebGPU llegó hace relativamente poco).</li>
+    <li>Activa la <strong>aceleración de hardware</strong>; en Chrome de Linux activa <code>chrome://flags/#enable-unsafe-webgpu</code>.</li>
+    <li>Actualiza los <strong>drivers de la GPU</strong> si otras demos de WebGPU también fallan.</li>
+    <li>¿Sigue en negro? <a href="/es/download/">Cámbiate al cliente oficial de Windows</a>.</li>
+  </ul>
+</section>
+
+<section id="servidor-lleno">
+  <h2>«Too many people are playing» (servidor lleno)</h2>
+  <p class="lede"><strong>Respuesta directa:</strong> el servidor oficial está a plena capacidad — el aviso desaparece solo, así que recarga y vuelve a pulsar Play un poco más tarde, o usa mientras tanto el cliente oficial de Windows.</p>
+  <ul class="checks">
+    <li><strong>Recarga y reintenta:</strong> el aviso de servidor lleno desaparece solo cuando baja la carga.</li>
+    <li><strong>Las horas valle ayudan:</strong> la comunidad del Discord del juego (113.690 miembros al 2026-11-10) alcanza picos duros en las tardes-noches de EE. UU.</li>
+    <li><strong>Cliente de Windows:</strong> los guías de la comunidad lo recomiendan justamente para las horas de servidor lleno — <a href="/es/download/">consíguelo desde la página oficial</a>.</li>
+    <li><strong>Entra en el Discord oficial:</strong> <a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">discord.gg/azerothsurvivors ↗</a> — avisos de estado y la descarga de Windows; el lugar oficial de desahogo cuando la versión de navegador está llena.</li>
+  </ul>
+</section>
+
+<section id="error-webgpu">
+  <h2>«WebGPU found no usable graphics card»</h2>
+  <p class="lede"><strong>Respuesta directa:</strong> tu navegador no pudo crear un dispositivo WebGPU con tu GPU — actualiza los drivers de gráfica y el navegador, activa la aceleración de hardware y, si la GPU es demasiado vieja para WebGPU, juega el cliente de Windows.</p>
+  <ul class="checks">
+    <li>Actualiza los <strong>drivers de la GPU</strong> (NVIDIA / AMD / Intel) a la versión actual.</li>
+    <li>Actualiza el propio navegador; vuelve a abrirlo e inténtalo de nuevo.</li>
+    <li>Activa la <strong>aceleración de hardware</strong> en los ajustes del navegador.</li>
+    <li>En Chrome de Linux: <code>chrome://flags/#enable-unsafe-webgpu</code>.</li>
+    <li>Las GPU viejas sin las funciones que WebGPU necesita no tienen arreglo — <a href="/es/download/">el cliente oficial de Windows</a> funciona sin WebGPU.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="kicker">Más comprobaciones rápidas</span>
+  <h2>¿Sigues atascado? Comprobaciones de treinta segundos</h2>
+  <ul class="checks">
+    <li><strong>Tu primer minuto:</strong> recarga la página con Ctrl+R, cierra las pestañas pesadas y haz clic dentro del marco del juego. Parece básico, pero resuelve más «no me deja jugar» que cualquier otra cosa.</li>
+    <li><strong>Otro navegador:</strong> un segundo navegador con WebGPU aísla los problemas de perfil o de extensiones.</li>
+    <li><strong>Extensiones:</strong> los bloqueadores de privacidad o de scripts pueden frenar las peticiones del juego — prueba en un perfil limpio.</li>
+    <li><strong>Lag, no carga:</strong> las pestañas pesadas y las horas punta cuestan fotogramas; el cliente de Windows esquiva la vía de navegador llena.</li>
+    <li><strong>Móviles:</strong> sin app oficial; el soporte móvil irregular de WebGPU es la causa habitual. <a href="/es/download/#movil">Estado de las plataformas →</a></li>
+  </ul>
+  <p class="small muted">Soluciones compiladas de la cobertura de solución de problemas de los guías próximos a los sitios oficiales (requisito WebGPU, flag de Linux, aviso de servidor lleno, foco del navegador y aceleración de hardware como puntos de comprobación), leídos el 2026-11-10 sobre el juego v0.143.0.</p>
+</section>
+
+<section id="cuando-cliente">
+  <span class="kicker">La vía rápida</span>
+  <h2>¿Cuándo te conviene cambiar al cliente de Windows?</h2>
+  <p class="lede">El cliente oficial de Windows no es solo el plan B: para varios de los problemas de esta página es directamente la solución. Tres señales claras de que toca cambiar:</p>
+  <ul class="checks">
+    <li><strong>El servidor está lleno a tu hora</strong> — el cliente entra por otra puerta del mismo servidor oficial; los guías de la comunidad lo recomiendan justamente para las horas de pico de EE. UU.</li>
+    <li><strong>Tu GPU o navegador no llegan a WebGPU</strong> — si las comprobaciones de arriba no desbloquean la pantalla negra, el cliente funciona sin WebGPU y pinta con las APIs nativas de Windows.</li>
+    <li><strong>Quieres jugar sin conexión</strong> — el navegador necesita la conexión al servidor oficial; el cliente permite partidas offline. <a href="/es/download/#instalacion">Los pasos de instalación en español →</a></li>
+  </ul>
+  <p class="small muted">Mismo juego, mismo progreso por clase: cada partida paga experiencia de talentos a tu clase, juegues donde la juegues.</p>
+</section>
+
+<section id="faq">
+  <span class="kicker">Preguntas frecuentes</span>
+  <h2>FAQ: «no me deja jugar» en español</h2>
+  <details class="faq"><summary>¿Por qué no me deja jugar Azeroth Survivors?</summary><div class="a"><p>Las dos causas habituales: tu navegador no tiene WebGPU (el juego dibuja su mundo con él) o el servidor oficial está lleno. Usa un Chrome, Edge o Safari actual, mantén activada la aceleración de hardware y, si la página dice que el servidor está lleno, espera un poco y recarga.</p></div></details>
+  <details class="faq"><summary>¿Cómo arreglo la pantalla negra?</summary><div class="a"><p>Un lienzo negro casi siempre significa que falta WebGPU o que falla: actualiza tu navegador, activa la aceleración de hardware y, en Chrome de Linux, activa chrome://flags/#enable-unsafe-webgpu. Si sigue fallando, juega el <a href="/es/download/">cliente oficial de Windows</a>.</p></div></details>
+  <details class="faq"><summary>¿Qué significa «Too many people are playing»?</summary><div class="a"><p>El servidor oficial está a plena capacidad. El aviso desaparece solo — recarga la página y vuelve a pulsar Play un poco más tarde, o cambia al cliente oficial de Windows mientras la versión de navegador esté llena.</p></div></details>
+  <details class="faq"><summary>¿Qué significa «WebGPU found no usable graphics card»?</summary><div class="a"><p>Tu navegador no pudo crear un dispositivo WebGPU con tu tarjeta gráfica. Actualiza los drivers de la GPU y el navegador, activa la aceleración de hardware y, si tu GPU es demasiado vieja para WebGPU, usa el cliente de Windows.</p></div></details>
+  <details class="faq"><summary>El juego va a tirones — ¿qué puedo hacer?</summary><div class="a"><p>Cierra las pestañas pesadas, deja la aceleración de hardware activada, prueba otro navegador con WebGPU y, en horas punta, considera el cliente de Windows, que evita la vía de navegador llena.</p></div></details>
+  <details class="faq"><summary>¿Se pierde mi progreso si el juego no carga?</summary><div class="a"><p>No por el fallo en sí: tu progreso vive en el perfil del navegador para el sitio donde juegas (o en tu equipo, con el cliente de Windows). Lo que sí lo borra es limpiar los datos del sitio — por eso el juego incluye copias de seguridad con comandos y atajos propios.</p></div></details>
+  <details class="faq"><summary>¿Puedo jugar sin conexión?</summary><div class="a"><p>Sí, con el cliente oficial de Windows, que permite jugar sin conexión — la versión de navegador necesita la conexión al servidor. La instalación, paso a paso, está en nuestra <a href="/es/download/">página de descarga</a>.</p></div></details>
+  <details class="faq"><summary>¿Funciona en móviles?</summary><div class="a"><p>No hay app oficial para móvil; los navegadores de móvil soportan WebGPU de forma irregular. Si no carga en tu teléfono, esa suele ser la razón — un navegador de escritorio es la forma más fiable de jugar.</p></div></details>
+</section>
+<div class="cta-band">
+  <h2>¿Funciona ya?</h2>
+  <p class="btnrow"><a class="btn btn-gold" href="/es/#jugar">Volver al juego</a>
+  <a class="btn btn-ghost" href="/es/">Aprender lo básico</a></p>
+</div>
+</main>
+<footer class="site">
+<div class="cols">
+  <div><h3>Guías (Español)</h3><ul>
+    <li><a href="/es/">Inicio</a></li>
+    <li><a href="/es/#como-jugar">Cómo jugar</a></li>
+    <li><a href="/es/download/">Descargar</a></li>
+    <li><a href="/es/not-loading/">No carga</a></li>
+  </ul></div>
+  <div><h3>Más (English)</h3><ul>
+    <li><a href="/how-to-play/">How to Play</a></li>
+    <li><a href="/builds/">Class Builds</a></li>
+    <li><a href="/tier-list/">Tier List</a></li>
+    <li><a href="/troubleshooting/">Troubleshooting</a></li>
+  </ul></div>
+  <div><h3>El juego</h3><ul>
+    <li><a href="https://wow.aethus.pl/" target="_blank" rel="noopener">Página oficial: wow.aethus.pl ↗</a></li>
+    <li><a href="https://discord.gg/azerothsurvivors" target="_blank" rel="noopener">Discord oficial ↗</a></li>
+    <li><a href="/about/">Sobre este sitio</a></li>
+  </ul></div>
+</div>
+<div class="langline"><b>Idioma:</b> <a href="/" lang="en">English</a> <span aria-hidden="true">·</span> <a href="/de/" lang="de">Deutsch</a> <span aria-hidden="true">·</span> <span lang="es">Español</span></div>
+<div class="legal">
+<p>PlayAzerothSurvivors.com es una guía independiente hecha por fans y un portal de juego para Azeroth Survivors. Sin afiliación con Blizzard Entertainment. Azeroth y World of Warcraft son marcas de Blizzard Entertainment, Inc. Sin afiliación con el desarrollador del juego, Aethus, ni respaldo de su parte.</p>
+<p>Los datos de este sitio se verificaron contra la versión v0.143.0 del juego el 2026-11-10. Solo enlazamos fuentes oficiales y nunca alojamos archivos del juego. Hay guías en inglés, alemán y español.</p>
+</div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
