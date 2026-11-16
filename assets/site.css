@@ -6,20 +6,21 @@
    零依赖零构建零外链图片：纯 CSS 渐变+内联 SVG，系统字体
    ============================================================ */
 :root{
-  --bg:#0f141c; --bg-2:#121824;
-  --panel:#151b26; --panel-2:#1b2330; --panel-3:#232c3d;
-  --text:#e2e5ea; --muted:#9aa1ad;
-  --accent:#c8a951;        /* WoW UI 暗金：h2 字/卡片金边/分隔线/导航 hover */
-  --gold-line:rgba(200,169,81,.33);   /* 卡片细金边 1px（#c8a95155 同值） */
-  --cta:#ffd100;           /* 亮金任务黄：Play 主按钮 */
+  /* A1 配色回座（1116 20:41 创始人令"第一版好看"——建站方案 1110 定稿 A1 原色板：暖黑棕底+羊皮纸米正文+亮暗金） */
+  --bg:#0E0A06; --bg-2:#161009;
+  --panel:#1A140D; --panel-2:#211A12; --panel-3:#2A2118;
+  --text:#E8DCC0; --muted:#A89A80;
+  --accent:#D9A53A;        /* A1 主暗金：h2 字/卡片金边/分隔线/导航 hover */
+  --gold-line:rgba(217,165,58,.33);   /* 卡片细金边 1px */
+  --cta:#FFD98A;           /* A1 亮金：Play 主按钮（暖黑字） */
   --ember:#FF6A2B;
   --q-uncommon:#1EFF00; --q-rare:#2F8CFF; --q-epic:#B04BFF; --q-legendary:#FF8000;
   /* 职业九色（WoW 官方通行职业色板，功能性色彩保留） */
   --cls-hunter:#ABD473; --cls-paladin:#F58CBA; --cls-warrior:#C79C6E;
   --cls-mage:#69CCF0; --cls-priest:#FFFFFF; --cls-warlock:#9482C9;
   --cls-druid:#FF7D0A; --cls-rogue:#FFF569; --cls-shaman:#0070DE;
-  --line:rgba(255,255,255,.09); --line-strong:rgba(200,169,81,.38);
-  --head:#f5f6f8;
+  --line:rgba(232,220,192,.09); --line-strong:rgba(217,165,58,.38);
+  --head:#F5EEDC;
   --serif:'Palatino Linotype','Book Antiqua',Palatino,Georgia,'Times New Roman',serif;
   --sans:system-ui,-apple-system,'Segoe UI',Roboto,'Microsoft YaHei',sans-serif;
   --radius:12px;
@@ -33,7 +34,7 @@ body{
   /* 点状纹理（正字 org 同款 dotted 观感）+顶部石板过渡 */
   background-image:
     radial-gradient(rgba(255,255,255,.045) 1px, transparent 1.4px),
-    linear-gradient(180deg,#141a26 0%, var(--bg) 340px);
+    linear-gradient(180deg,#171209 0%, var(--bg) 340px);
   background-size:22px 22px,100% 100%;
 }
 a{color:#dfe3e9;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.28)}
@@ -282,7 +283,7 @@ a.cls.mini:hover .tname{color:#fff}
   background:radial-gradient(120% 100% at 50% 0%, rgba(255,255,255,.05), transparent 62%),
     linear-gradient(180deg,var(--panel),var(--bg-2))}
 .vidslot .vplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;
-  background:rgba(255,255,255,.9);color:#0f141c;display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+  background:rgba(255,255,255,.9);color:#1A140D;display:flex;align-items:center;justify-content:center;font-size:1.4rem;
   box-shadow:0 0 26px rgba(0,0,0,.4)}
 .vidslot .vtag{position:absolute;left:12px;top:10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .vidslot .vtitle{position:absolute;left:0;right:0;bottom:14px;padding:0 1.2rem;color:var(--text);font-size:.9rem;text-align:center}
